@@ -51,12 +51,12 @@ on disciplinas.id_disciplinas = alunos.disciplinas_id;
 select nome_alunos, nome_disciplina
 FROM
 alunos left join disciplinas
-on disciplinas.id_disciplinas = alunos.disciplinas_id;
+on disciplinas.id_disciplinas = alunos.disciplinas_id
 
 UNION
 
 select nome_alunos, nome_disciplina
 FROM
-alunos RIGHT join disciplinas
-on disciplinas.id_disciplinas = alunos.disciplinas_id;
+disciplinas RIGHT join alunos
+on disciplinas.id_disciplinas = alunos.disciplinas_id
 
